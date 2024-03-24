@@ -1,18 +1,25 @@
 header{
-  background-color: var(--primary);
   display: flex;
   align-items: center;
   justify-content: space-between ;
   height: 80px;
-  padding: 0 25px;
-}
-
-button{
-  background-color: black;
-  padding: 5px;
+  padding: 0 35px;
 }
 
 a{
   text-decoration: none;
+}
+
+a span{
+  color: var(--primary);
+}
+
+.sticky-container a{
   margin: 0 5px;
+  transition: all 0.5s ease-in;
+}
+
+.sticky-container a:hover{
+  color: var(--primary);
+  border-bottom: 1px solid var(--primary);
 }
