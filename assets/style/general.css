@@ -1,10 +1,11 @@
+@import "header.css";
+@import "main.css";
+
 /* color palette */
 :root{
   --primary: #2B6DB8;
   --secondary: #7EB2EE;
 }
-
-@import "header.css";
 
 *{
   color: white;
@@ -16,4 +17,6 @@
 
 body{
   background-color: black;
+  padding: 0 25px;
+  height: 3000px;
 }

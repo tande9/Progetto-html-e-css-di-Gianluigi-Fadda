@@ -1,0 +1,48 @@
+.home-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 5%;
+  height: 80vh;
+  width: calc(100vw - 10%);
+  margin: auto;
+  font-size: 16px;
+}
+
+.personal-descr-container{
+  width: 50%;
+}
+
+.personal-descr-container h2{
+  margin-bottom: 15px;
+}
+
+.personal-descr{
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+.personal-descr a{
+  text-decoration: none;
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+img{
+  width: 30%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--primary),
+              0 0 20px var(--primary),
+              0 0 30px var(--primary),
+              0 0 40px var(--primary);
+  transition: all 0.5s ease-in;
+}
+
+img:hover{
+  box-shadow: 0 0 10px var(--primary),
+              0 0 20px var(--primary),
+              0 0 30px var(--primary),
+              0 0 40px var(--primary),
+              0 0 50px var(--primary),
+              0 0 60px var(--primary);
+}
