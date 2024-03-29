@@ -1,4 +1,4 @@
-header{
+.desktop-header{
   display: flex;
   align-items: center;
   justify-content: space-between ;
@@ -33,7 +33,7 @@ header .logo{
   color: var(--primary)
 }
 
-/* settings for menù*/
+/* settings for sticky*/
 
 .sticky-container a{
   margin: 0 5px;
@@ -47,3 +47,35 @@ header .logo{
   border-bottom: 1px solid var(--primary);
 }
 
+/* For mobile */
+
+.mobile-header{
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .mobile-header{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+  }
+
+  .desktop-header{
+    display: none;
+  }
+
+  .hamburger-menu{
+    color: #fff;
+  }
+
+  .link-container-mobile{
+    display: none;
+  }
+
+  .open-menu:hover .link-container-mobilee {
+    display: flex;
+    height: 1500px;
+    background-color: blue;
+  }
+}
