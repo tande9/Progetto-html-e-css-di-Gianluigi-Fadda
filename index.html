@@ -15,50 +15,38 @@
 
   <header>
 
-    <div class="desktop-header">
+    <div class="header-container">
 
       <a class="logo" href="#">
         <span class="name-logo">Gianluigi</span>
         <span class="surname-logo">Fadda</span>
       </a>
 
-      <div class="sticky-container">
+      <nav class="sticky-menu-container">
+       
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+          <span class="nav-icon"></span>
+        </label>
 
-        <a href="" class="link-home">Chi sono</a>
-        <a href="" class="link-skills">Skills</a>
-        <a href="" class="link-contact">Contattami</a>
-        <a href="" target ="_blank" class="link-cv">CV</a>
+        <ul class="menu">
+          <li><a href="" class="link-home">Chi sono</a></li>
+          <li><a href="" class="link-skills">Skills</a></li>
+          <li><a href="" class="link-contact">Contattami</a></li>
+          <li><a href="" target ="_blank" class="link-cv">CV</a></li>
+        </ul>
 
-      </div>
+        <ul class="menu-mobile">
+          <li><a href="" class="link-home">Chi sono</a></li>
+          <li><a href="" class="link-skills">Skills</a></li>
+          <li><a href="" class="link-contact">Contattami</a></li>
+          <li><a href="" target ="_blank" class="link-cv">CV</a></li>
+        </ul>
+
+      </nav>
 
     </div>
-
-    <!-- Only for mobile -->
-    
-    <div class="mobile-header">
-
-      <a class="logo" href="#">
-        <span class="name-logo">Gianluigi</span>
-        <span class="surname-logo">Fadda</span>
-      </a>
-
-      <div class="sticky-container-mobile">
-
-        <a onclick=showSidebar() class="hamburger-menu" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-        </a>
-
-        <div class="link-container-mobile">
-
-        <a href="" class="link-home">Chi sono</a>
-        <a href="" class="link-skills">Skills</a>
-        <a href="" class="link-contact">Contattami</a>
-        <a href="" target ="_blank" class="link-cv">CV</a>
-
-        </div>
-  
-      </div>
-    </div>
+      
 
   </header>
 
@@ -99,10 +87,6 @@
   <footer>
 
   </footer>
-
-  <script>
-  
-  </script>
 
 </body>
 </html>

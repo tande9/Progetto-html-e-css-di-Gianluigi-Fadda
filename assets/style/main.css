@@ -28,6 +28,10 @@
   font-weight: 600;
 }
 
+.personal-descr a:hover{
+  border-bottom: 1px solid var(--primary);
+}
+
 img{
   width: 30%;
   border-radius: 50%;
