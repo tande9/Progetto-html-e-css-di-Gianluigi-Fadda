@@ -10,6 +10,10 @@
   right: 0;
   background-color: #000;
   z-index: 1;
+  box-shadow: 2px 0 2px rgba(43, 109, 184, 0.8),
+              2px 0 4px rgba(43, 109, 184, 0.8),
+              2px 0 6px rgba(43, 109, 184, 0.8);
+
 }
 
 header .logo{
@@ -46,10 +50,6 @@ header .logo{
   justify-content: space-evenly;
 }
 
-.menu-mobile{
-  display: none;
-}
-
 .menu li{
   margin: 0 5px;
   padding: 0;
@@ -65,6 +65,12 @@ header .logo{
 .menu a:hover{
   color: var(--primary);
   border-bottom: 1px solid var(--primary);
+}
+
+/* Settings for menu-btn only for mobile and tablet */
+
+.menu-mobile{
+  display: none;
 }
 
 .menu-icon{
@@ -89,6 +95,7 @@ header .logo{
   height: 100%;
   width: 100%;
   position: absolute;
+  transition: all 0.25s ease-in-out;
 }
 
 .nav-icon::before{
@@ -103,11 +110,9 @@ header .logo{
   display: none;
 }
 
-@media (min-width:320px) and (max-width:480px){
-  .header-container{
-    justify-content: space-between;
-    padding: 0 20px;
-  }
+/* mobile and tablet media queries */
+
+@media (min-width:320px) and (max-width:768px){
 
   .menu{
     display: none;
@@ -120,35 +125,57 @@ header .logo{
 
   .menu-mobile{
     position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background-color: rgba(43, 109, 184, 0.35);
+    backdrop-filter: blur(10px);
+    font-size: 1.2em;
+    transition: width 0.5s;
+    width: 0;
   }
 
   .menu-mobile li{
     list-style: none;
-    color: white;
     margin: 15px;
   }
 
   .menu-mobile a{
     text-decoration: none;
+    color: #000000;
+    font-weight: 700;
   }
 
-
   .menu-btn:checked ~ .menu-mobile{
+    top: 80px;
+    bottom: 0;
+    right: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: black;
+    width: 100%;
   }
 
-  main{
-    display: none;
+  /* animation closing button */
+  .menu-btn:checked ~ .menu-icon .nav-icon{
+    background-color: transparent;
   }
 
+  .menu-btn:checked ~ .menu-icon .nav-icon::before{
+    transform: rotate(45deg);
+    top: 0;
+  }
 
+  .menu-btn:checked ~ .menu-icon .nav-icon::after{
+    transform: rotate(-45deg);
+    bottom: 0;
+  }
+
+}
+
+@media (min-width:320px) and (max-width:480px){
+
+  .logo{
+    font-size: 24px !important; 
+  }
 }
