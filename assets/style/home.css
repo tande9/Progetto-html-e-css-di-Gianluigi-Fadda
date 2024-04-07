@@ -11,7 +11,8 @@
   width: 50%;
 }
 
-.personal-descr-container h2{
+.personal-descr-container h2,
+.skills-container h2{
   margin-bottom: 25px;
   text-shadow:  0 0 10px var(--primary),
   0 0 20px var(--primary),
@@ -35,7 +36,7 @@
   border-bottom: 1px solid var(--primary);
 }
 
-img{
+.my-pic{
   width: 30%;
   border-radius: 50%;
   box-shadow: 0 0 10px var(--primary),
@@ -45,7 +46,7 @@ img{
   transition: all 0.5s ease-in;
 }
 
-img:hover{
+.my-pic:hover{
   box-shadow: 0 0 10px var(--primary),
               0 0 20px var(--primary),
               0 0 30px var(--primary),
@@ -53,6 +54,16 @@ img:hover{
               0 0 50px var(--primary),
               0 0 60px var(--primary);
 }
+
+/* .skills-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+} */
+
+
 
 @media (min-width:320px) and (max-width:480px){
 
