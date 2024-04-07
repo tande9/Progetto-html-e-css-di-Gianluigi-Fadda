@@ -55,15 +55,6 @@
               0 0 60px var(--primary);
 }
 
-/* .skills-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-} */
-
-
 
 @media (min-width:320px) and (max-width:480px){
 
