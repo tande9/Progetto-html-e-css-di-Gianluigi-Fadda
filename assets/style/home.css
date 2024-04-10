@@ -3,8 +3,9 @@
   align-items: center;
   justify-content: space-evenly;
   padding: 0 10%;
-  margin: 150px auto;
+  margin: 80px auto;
   font-size: 16px;
+  height: calc(100vh - 80px);
 }
 
 .personal-descr-container{
@@ -24,6 +25,7 @@
 .personal-descr{
   font-size: 18px;
   line-height: 1.5rem;
+  text-align: left;
 }
 
 .personal-descr a{
@@ -58,24 +60,17 @@
 
 @media (min-width:320px) and (max-width:480px){
 
-  .home-container{
-    margin-top: 80px;
-  }
-
   .personal-descr{
-    font-size: 14px;
+    font-size: 15px;
+    margin-top: 40px;
   }
 
 }
 
 @media (min-width:481px) and (max-width:768px){
 
-  .home-container{
-    margin-top: 80px;
-  }
-
   .personal-descr{
-    font-size: 16px;
+    font-size: 17px;
   }
 
 }
@@ -85,16 +80,18 @@
   .home-container{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column-reverse;
-    justify-content: space-between;
-    margin-top: 100px;
     padding: 0;
-    text-align: center;
   }
 
   .personal-descr-container{
     width: 80%;
-    margin-top: 50px;
+    text-align: center;
+  }
+
+  .personal-descr{
+    text-align: center;
   }
 
   .home-container img{

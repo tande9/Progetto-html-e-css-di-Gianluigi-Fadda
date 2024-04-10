@@ -134,7 +134,6 @@ header .logo{
 
   .menu-mobile li{
     list-style: none;
-    margin: 15px;
   }
 
   .menu-mobile a{
@@ -173,7 +172,7 @@ header .logo{
 
 }
 
-@media (min-width:320px) and (max-width:480px){
+@media (min-width:320px) and (max-width:768px){
 
   .logo{
     font-size: 24px !important; 
