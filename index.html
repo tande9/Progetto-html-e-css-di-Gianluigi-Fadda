@@ -8,9 +8,19 @@
   <link rel="stylesheet" href="assets/style/home.css">
   <link rel="stylesheet" href="assets/style/skills.css">
   <link rel="stylesheet" href="assets/style/contacts.css">
+  <link rel="stylesheet" href="assets/style/footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- open graphs tag -->
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Gianluigi Fadda | Portfolio web developer"/>
+  <meta property="og:image" content="assets/img/og_image.png"/>
+  <meta property="og:description" content="Visita il mio portfolio"/>
+  <meta property="og:url" content="#"/>
+
   <title>Gianluigi Fadda | Portfolio web developer</title>
 </head>
 <body>
@@ -36,10 +46,12 @@
           <li><a href="#skills-container" class="link-skills">Skills</a></li>
           <li><a href="#contacts-container" class="link-contact">Contattami</a></li>
           <li><a href="" target ="_blank" class="link-cv">CV</a></li>
+          <li><a href="" target ="_blank" class="link-projects">I miei progetti</a></li>
         </ul>
 
         <ul class="menu-mobile">
           <li><a href="" target ="_blank" class="link-cv">Scarica il mio CV</a></li>
+          <li><a href="" target ="_blank" class="link-projects">I miei progetti</a></li>
         </ul>
 
       </nav>
@@ -70,7 +82,7 @@
 
       </div>
 
-      <img src="assets/img/Test-portfolio.jpg" class="my-pic" alt="image of my self">
+      <img src="assets/img/pic_of_myself.jpg" class="my-pic" alt="image of my self">
 
     </div>
 
@@ -137,9 +149,9 @@
     <!-- sezione contattami -->
     <div class="contacts-container" id="contacts-container">
 
-      <h2>Contattami</h2>
-
       <form class="form-contacts" onsubmit="sendEmail(); reset(); return false;">
+
+        <h2>Contattami</h2>
 
         <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
 
@@ -157,10 +169,27 @@
 
   </main>
   
-  <footer>
+  <footer">
 
-    <div class="footer-container">
+    <div class="footer-link-container">
 
+      <div class="box-image-link">
+        <a href="https://github.com/tande9" target="_blank"><img src="assets/img/git_link_svg.svg" alt="my GitHub"></a>
+      </div>
+
+      <div class="box-image-link">
+        <a href="https://www.instagram.com/tandeefadda/" target="_blank"><img src="assets/img/instagram_link_svg.svg" alt="my Instagram"></a>
+      </div>
+
+      <div class="box-image-link">
+        <a href="https://www.linkedin.com/in/gianluigifadda/" target="_blank"><img src="assets/img/linkedin_link_svg.svg" alt="my Linkedin"></a>
+      </div>
+      
+    </div>
+
+    <div class="copyright">
+      <p>Copyright © 2024 by Gianluigi Fadda. All rights reserved. Designed by Gianluigi Fadda.
+      </p>
     </div>
 
   </footer>
@@ -168,19 +197,20 @@
   <script src="https://smtpjs.com/v3/smtp.js">
   </script>
 
-  <script>
+<!-- js per form contatti -->
+  <script> 
     function sendEmail(){
-  Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "tandefadda@gmail.com",
-    Password : "4992A48B74A8617ECC8302B72556C0C2BFD9",
-    To : "tandefadda@gmail.com",
-    From : "tandefadda@gmail.com",
-    Subject : "New contact from portfolio!",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
+      Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "tandefadda@gmail.com",
+        Password : "4992A48B74A8617ECC8302B72556C0C2BFD9",
+        To : "tandefadda@gmail.com",
+        From : "tandefadda@gmail.com",
+        Subject : "New contact from portfolio!",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
 }
   </script>
 

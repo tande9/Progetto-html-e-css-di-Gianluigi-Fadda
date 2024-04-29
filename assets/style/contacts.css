@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-.contacts-container h2{
+.form-contacts h2{
   margin-bottom: 25px;
   text-shadow:  0 0 10px var(--primary),
   0 0 20px var(--primary),
@@ -49,4 +49,21 @@
 .send-request-form:hover{
   transform: scale(1.2);
   background-color: var(--secondary);
+}
+
+@media (min-width:320px) and (max-width:768px){
+
+#name,
+#email,
+#tel,
+#message{
+  width: 80%;
+  margin: 0 0 10px 0;
+  height: 40px ;
+}
+
+.contacts-container{
+  margin: 50px 0;
+}
+
 }

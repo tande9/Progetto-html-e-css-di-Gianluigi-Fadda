@@ -125,7 +125,7 @@ header .logo{
 
   .menu-mobile{
     position: fixed;
-    background-color: rgba(43, 109, 184, 0.35);
+    background-color: rgba(366, 366, 366, 0.5);
     backdrop-filter: blur(15px);
     font-size: 1.2em;
     transition: width 0.5s;
@@ -133,6 +133,7 @@ header .logo{
   }
 
   .menu-mobile li{
+    margin: 5px 0;
     list-style: none;
   }
 
@@ -140,6 +141,7 @@ header .logo{
     text-decoration: none;
     color: #000000;
     font-weight: 700;
+    font-size: 18px;
   }
 
   .menu-btn:checked ~ .menu-mobile{
