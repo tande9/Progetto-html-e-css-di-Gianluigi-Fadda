@@ -51,7 +51,7 @@ header .logo{
 }
 
 .menu li{
-  margin: 0 5px;
+  margin: 0 10px;
   padding: 0;
   list-style: none;
   font-size: 18px;
@@ -126,7 +126,7 @@ header .logo{
   .menu-mobile{
     position: fixed;
     background-color: rgba(43, 109, 184, 0.35);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     font-size: 1.2em;
     transition: width 0.5s;
     width: 0;

@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="assets/style/header.css">
   <link rel="stylesheet" href="assets/style/home.css">
   <link rel="stylesheet" href="assets/style/skills.css">
+  <link rel="stylesheet" href="assets/style/contacts.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -31,9 +32,9 @@
         </label>
 
         <ul class="menu">
-          <li><a href="" class="link-home">Chi sono</a></li>
-          <li><a href="" class="link-skills">Skills</a></li>
-          <li><a href="" class="link-contact">Contattami</a></li>
+          <li><a href="#home-container" class="link-home">Chi sono</a></li>
+          <li><a href="#skills-container" class="link-skills">Skills</a></li>
+          <li><a href="#contacts-container" class="link-contact">Contattami</a></li>
           <li><a href="" target ="_blank" class="link-cv">CV</a></li>
         </ul>
 
@@ -49,8 +50,8 @@
   </header>
 
   <main>
-
-    <div class="home-container">
+    <!-- container descrizione e foto -->
+    <div class="home-container" id="home-container">
 
       <div class="personal-descr-container">
 
@@ -73,7 +74,7 @@
 
     </div>
 
-
+    
     <div class="skills-container" id="skills-container">
 
       <div class="hard-skills">
@@ -133,11 +134,55 @@
       
     </div>
 
+    <!-- sezione contattami -->
+    <div class="contacts-container" id="contacts-container">
+
+      <h2>Contattami</h2>
+
+      <form class="form-contacts" onsubmit="sendEmail(); reset(); return false;">
+
+        <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
+
+        <input type="email" id="email" name="email" placeholder="La tua e-mail" required>
+
+        <input type="tel" id="tel" name="tel"  pattern="[0-9]{10}" placeholder="Il tuo numero di telefono" required>
+
+        <input type="text" id="message" name="message" placeholder="Lascia un messaggio">
+
+        <input type="submit" class="send-request-form"></input>
+      
+      </form>
+
+    </div>
+
   </main>
   
   <footer>
 
+    <div class="footer-container">
+
+    </div>
+
   </footer>
+
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+
+  <script>
+    function sendEmail(){
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "tandefadda@gmail.com",
+    Password : "4992A48B74A8617ECC8302B72556C0C2BFD9",
+    To : "tandefadda@gmail.com",
+    From : "tandefadda@gmail.com",
+    Subject : "New contact from portfolio!",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+}
+  </script>
 
 </body>
 </html>

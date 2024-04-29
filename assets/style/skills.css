@@ -8,7 +8,12 @@
 }
 
 .skills-container h2{
-  margin: 0 0 40px 0;
+  margin-bottom: 40px;
+  text-shadow:  0 0 10px var(--primary),
+  0 0 20px var(--primary),
+  0 0 30px var(--primary),
+  0 0 40px var(--primary);
+  font-size: 34px;
 }
 
 .icon-container{

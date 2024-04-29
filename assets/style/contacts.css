@@ -1,0 +1,52 @@
+.contacts-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts-container h2{
+  margin-bottom: 25px;
+  text-shadow:  0 0 10px var(--primary),
+  0 0 20px var(--primary),
+  0 0 30px var(--primary),
+  0 0 40px var(--primary);
+  font-size: 34px;
+}
+
+.form-contacts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+}
+
+#name,
+#email,
+#tel,
+#message{
+  color: black;
+  outline: none;
+  padding: 10px;
+  width: 50%;
+  margin: 0 0 10px 0;
+  height: 50px ;
+}
+
+.send-request-form{
+  margin-top: 25px;
+  padding: 10px 25px;
+  color: white;
+  background-color: var(--primary);
+  border: none;
+  transition: all .25s ease-in-out;
+  color: black;
+  cursor: pointer;
+}
+
+
+.send-request-form:hover{
+  transform: scale(1.2);
+  background-color: var(--secondary);
+}

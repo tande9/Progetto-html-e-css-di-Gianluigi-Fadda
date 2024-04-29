@@ -12,8 +12,7 @@
   width: 50%;
 }
 
-.personal-descr-container h2,
-.skills-container h2{
+.personal-descr-container h2{
   margin-bottom: 25px;
   text-shadow:  0 0 10px var(--primary),
   0 0 20px var(--primary),
