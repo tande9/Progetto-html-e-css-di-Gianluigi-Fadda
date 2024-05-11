@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/style/general.css">
-  <link rel="stylesheet" href="assets/style/header.css">
-  <link rel="stylesheet" href="assets/style/home.css">
-  <link rel="stylesheet" href="assets/style/skills.css">
-  <link rel="stylesheet" href="assets/style/contacts.css">
-  <link rel="stylesheet" href="assets/style/footer.css">
+  <link rel="stylesheet" href="../assets/style/general.css">
+  <link rel="stylesheet" href="../assets/style/header.css">
+  <link rel="stylesheet" href="../assets/style/home.css">
+  <link rel="stylesheet" href="../assets/style/skills.css">
+  <link rel="stylesheet" href="../assets/style/contacts.css">
+  <link rel="stylesheet" href="../assets/style/footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 
   <meta property="og:type" content="website"/>
   <meta property="og:title" content="Gianluigi Fadda | Portfolio web developer"/>
-  <meta property="og:image" content="assets/img/og_image.png"/>
+  <meta property="og:image" content="../assets/img/og_image.png"/>
   <meta property="og:description" content="Visita il mio portfolio"/>
   <meta property="og:url" content="#"/>
 
@@ -45,13 +45,13 @@
           <li><a href="#home-container" class="link-home">Chi sono</a></li>
           <li><a href="#skills-container" class="link-skills">Skills</a></li>
           <li><a href="#contacts-container" class="link-contact">Contattami</a></li>
-          <li><a href="" target ="_blank" class="link-cv">CV</a></li>
-          <li><a href="" target ="_blank" class="link-projects">I miei progetti</a></li>
+          <li><a href="/curriculum/" target ="_blank" class="link-cv">CV</a></li>
+          <li><a href="/my-works/" target ="_blank" class="link-projects">I miei progetti</a></li>
         </ul>
 
         <ul class="menu-mobile">
-          <li><a href="" target ="_blank" class="link-cv">Scarica il mio CV</a></li>
-          <li><a href="" target ="_blank" class="link-projects">I miei progetti</a></li>
+          <li><a href="/curriculum/" target ="_blank" class="link-cv">Scarica il mio CV</a></li>
+          <li><a href="/my works/" target ="_blank" class="link-projects">I miei progetti</a></li>
         </ul>
 
       </nav>
@@ -82,7 +82,7 @@
 
       </div>
 
-      <img src="assets/img/pic_of_myself.jpg" class="my-pic" alt="image of my self">
+      <img src="../assets/img/pic_of_myself.jpg" class="my-pic" alt="image of my self">
 
     </div>
 
@@ -125,17 +125,17 @@
         <div class="icon-container">
 
           <div class="box-image">
-            <img src="assets/img/probem_solving_icon.png" alt="problem solving">
+            <img src="../assets/img/probem_solving_icon.png" alt="problem solving">
             <span>Problem solving</span>
           </div>
 
           <div class="box-image">
-            <img src="assets/img/team_work_icon.png" alt="team work">
+            <img src="../assets/img/team_work_icon.png" alt="team work">
             <span>Lavoro in team</span>
           </div>
 
           <div class="box-image">
-            <img src="assets/img/discipline_icon.png" alt="discipline">
+            <img src="../assets/img/discipline_icon.png" alt="discipline">
             <span>Disciplina</span>
           </div>
 
@@ -174,15 +174,15 @@
     <div class="footer-link-container">
 
       <div class="box-image-link">
-        <a href="https://github.com/tande9" target="_blank"><img src="assets/img/git_link_svg.svg" alt="my GitHub"></a>
+        <a href="https://github.com/tande9" target="_blank"><img src="../assets/img/git_link_svg.svg" alt="my GitHub"></a>
       </div>
 
       <div class="box-image-link">
-        <a href="https://www.instagram.com/tandeefadda/" target="_blank"><img src="assets/img/instagram_link_svg.svg" alt="my Instagram"></a>
+        <a href="https://www.instagram.com/tandeefadda/" target="_blank"><img src="../assets/img/instagram_link_svg.svg" alt="my Instagram"></a>
       </div>
 
       <div class="box-image-link">
-        <a href="https://www.linkedin.com/in/gianluigifadda/" target="_blank"><img src="assets/img/linkedin_link_svg.svg" alt="my Linkedin"></a>
+        <a href="https://www.linkedin.com/in/gianluigifadda/" target="_blank"><img src="../assets/img/linkedin_link_svg.svg" alt="my Linkedin"></a>
       </div>
       
     </div>
@@ -207,7 +207,11 @@
         To : "tandefadda@gmail.com",
         From : "tandefadda@gmail.com",
         Subject : "New contact from portfolio!",
-        Body : "And this is the body"
+        // Body : "And this is the body"
+        Body : "Name: " + document.getElementById("name").value
+         +     " Email: " + document.getElementById("email").value
+         +     " Phone: " + document.getElementById("tel").value
+         +     " Body: " + document.getElementById("message").value
     }).then(
       message => alert(message)
     );
