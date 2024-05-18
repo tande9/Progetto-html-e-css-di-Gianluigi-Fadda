@@ -3,14 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/style/general.css">
   <link rel="stylesheet" href="../assets/style/my-works-style/style.css">
   <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico.png">
 
   <title>Projects web developer | Gianluigi Fadda</title>
 </head>
 <body>
+
   
-  
+  <div class="text-container">
+
+    <span class="emoji">&#129325;</span>
+    <p>OPS! Sei arrivato troppo in anticipo! Al momento non ho altro da mostrarti oltre il mio <a href="../home/">portfolio</a> e il mio <a href="../curriculum/">curriculum</a>.</p>
+    
+    <p class="cta-form">Se vuoi sapere di più compila il form e contattami!</p>
+
+  </div>
+
+
+    <form class="form-contacts" onsubmit="sendEmail(); reset(); return false;">
+
+      <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
+
+      <input type="email" id="email" name="email" placeholder="La tua e-mail" required>
+
+      <input type="tel" id="tel" name="tel"  pattern="[0-9]{10}" placeholder="Il tuo numero di telefono" required>
+
+      <input type="text" id="message" name="message" placeholder="Lascia un messaggio">
+
+      <input type="submit" class="send-request-form"></input>
+    
+    </form>
+
+  <!-- js per form contatti -->
+  <script> 
+  function sendEmail(){
+    Email.send({
+      Host : "smtp.elasticemail.com",
+      Username : "tandefadda@gmail.com",
+      Password : "4992A48B74A8617ECC8302B72556C0C2BFD9",
+      To : "tandefadda@gmail.com",
+      From : "tandefadda@gmail.com",
+      Subject : "New contact from portfolio!",
+      Body : "Name: " + document.getElementById("name").value
+       +     " Email: " + document.getElementById("email").value
+       +     " Phone: " + document.getElementById("tel").value
+       +     " Message: " + document.getElementById("message").value
+  }).then(
+    message => alert(message)
+  );
+}
+</script>
 
 </body>
 </html>
