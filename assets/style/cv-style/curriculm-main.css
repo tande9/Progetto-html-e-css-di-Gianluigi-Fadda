@@ -1,0 +1,78 @@
+.container-sections{
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20%;
+}
+
+.section-left{
+  width: 30%;
+}
+
+.section-right{
+  width: 50%;
+}
+
+.container-sections h3{
+  margin: 15px 0;
+  color: var(--primary);
+}
+
+p{
+  margin: 20px 0;
+}
+
+p span{
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.skills img{
+  width: 80px;
+}
+
+.container-single-skill{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress-bar{
+  height: 20px;
+  width: 60%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+}
+
+.loading{
+  background-color: var(--primary);
+  height: 18px;
+}
+
+.loading.html,
+.loading.css{
+  width: 80%;
+}
+
+.loading.git,
+.loading.ps,
+.loading.excel{
+  width: 60%;
+}
+
+@media (min-width:320px) and (max-width:768px){
+
+  .container-sections{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    align-items: center;
+    font-size: 0.8em;
+  }
+
+  .section-left,
+  .section-right{
+    width: 80%;
+  }
+
+}

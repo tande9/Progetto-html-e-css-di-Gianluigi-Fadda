@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../assets/style/general.css">
-  <link rel="stylesheet" href="../assets/style/header.css">
-  <link rel="stylesheet" href="../assets/style/home.css">
-  <link rel="stylesheet" href="../assets/style/skills.css">
-  <link rel="stylesheet" href="../assets/style/contacts.css">
-  <link rel="stylesheet" href="../assets/style/footer.css">
+
+  <link rel="stylesheet" href="../assets/style/home-style/general.css">
+  <link rel="stylesheet" href="../assets/style/home-style/header.css">
+  <link rel="stylesheet" href="../assets/style/home-style/home.css">
+  <link rel="stylesheet" href="../assets/style/home-style/skills.css">
+  <link rel="stylesheet" href="../assets/style/home-style/contacts.css">
+  <link rel="stylesheet" href="../assets/style/home-style/footer.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico.png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
+  
+  <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico.png">
+  
   <!-- open graphs tag -->
 
   <meta property="og:type" content="website"/>
@@ -77,7 +81,7 @@
       
               Non vedo l'ora di dimostrare il mio potenziale e di mettermi in gioco nel mondo dello sviluppo.
       
-              Se vuoi sapere di più sulla mia carriera lavorativa dai uno sguardo al mio <a href="" target ="_blank" class="link-cv">CV</a>.
+              Se vuoi sapere di più sulla mia carriera lavorativa dai uno sguardo al mio <a href="../curriculum/" target ="_blank" class="link-cv">CV</a>.
             </p>
 
       </div>
@@ -207,11 +211,10 @@
         To : "tandefadda@gmail.com",
         From : "tandefadda@gmail.com",
         Subject : "New contact from portfolio!",
-        // Body : "And this is the body"
         Body : "Name: " + document.getElementById("name").value
          +     " Email: " + document.getElementById("email").value
          +     " Phone: " + document.getElementById("tel").value
-         +     " Body: " + document.getElementById("message").value
+         +     " Message: " + document.getElementById("message").value
     }).then(
       message => alert(message)
     );
