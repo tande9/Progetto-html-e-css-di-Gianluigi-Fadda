@@ -125,8 +125,8 @@ header .logo{
 
   .menu-mobile{
     position: fixed;
-    background-color: rgba(366, 366, 366, 0.5);
-    backdrop-filter: blur(15px);
+    background-color: rgba(366, 366, 366, 0.8);
+    backdrop-filter: blur(20px);
     font-size: 1.2em;
     transition: width 0.5s;
     width: 0;

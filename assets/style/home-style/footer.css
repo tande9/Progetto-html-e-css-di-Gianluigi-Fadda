@@ -11,13 +11,13 @@
   margin: 0 15px;
 }
 
-.box-image-link img{
+.box-image-link svg{
   height: 40px;
   width: 40px;
   transition: all .25s ease-in-out;
 }
 
-.box-image-link img:hover{
+.box-image-link svg:hover{
   transform: scale(1.2);
 }
 
